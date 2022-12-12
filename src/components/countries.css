@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300:600:800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+img{
+    max-width: 100%;
+    
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 20px;
+    background-color: hsl(207, 26%, 17%);
+    color: white;
+}
+
+.grid article img{
+    border-radius: 5px 5px 0 0;
+}
+.grid .info{
+    background-color: hsl(209, 23%, 22%);
+    padding: 20px;
+    margin-top: -10px;
+    border-radius: 0 0 5px 5px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+h2{
+    padding-bottom: 10px;
+    font-weight: 800;
+}
+h4{
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+span{
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 375px){
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px){
+    .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 992px){
+    .grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1440px){
+    .grid{
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
