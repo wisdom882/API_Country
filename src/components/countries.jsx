@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import { SearchBox } from './search'
 import './countries.css'
 const url = 'https://restcountries.com/v3.1/all'
 
@@ -17,11 +18,16 @@ const Countries = () => {
     }, [])
     return(
         <>
+        <div className='header'>
+            <h3 className='text'>Where in the world?</h3>
+        </div>
+        <SearchBox/>
            <section className="grid">
             {countries.map((country) => {
                     const {name, population, flags, capital, numericCode, region} = country
                     return <article key={numericCode}>
                         <div>
+                            
                             <img src={flags.png} alt={name}/>
                                 <div className="info">
                                 <h2>{name.common}</h2>

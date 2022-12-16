@@ -1,0 +1,19 @@
+.searchbox{
+    margin-bottom: 40px;
+}
+.search_text{
+
+    border: none;;
+    outline: none;
+    width: 30%;
+    padding: 20px 0px 20px 50px;
+    border-radius: 5px;
+    background-color: hsl(209, 23%, 22%);
+    color: white;
+}
+
+.search_text:focus{
+    
+    outline: none;
+   
+}
