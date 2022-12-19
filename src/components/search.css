@@ -1,5 +1,13 @@
+.search-filter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 .searchbox{
     margin-bottom: 40px;
+    margin-top: 40px;
 }
 .search_text{
 

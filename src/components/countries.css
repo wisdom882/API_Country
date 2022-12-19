@@ -45,7 +45,9 @@ span{
 
 .header{
     background-color: hsl(209, 23%, 22%);
-  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .text{
     padding: 20px;

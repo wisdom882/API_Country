@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { SearchBox } from './search'
+import SearchBox from './search'
 import './countries.css'
 const url = 'https://restcountries.com/v3.1/all'
 
@@ -20,8 +20,9 @@ const Countries = () => {
         <>
         <div className='header'>
             <h3 className='text'>Where in the world?</h3>
+            <h4 className='text'>Dark Mode</h4>
         </div>
-        <SearchBox/>
+        <SearchBox />
            <section className="grid">
             {countries.map((country) => {
                     const {name, population, flags, capital, numericCode, region} = country
